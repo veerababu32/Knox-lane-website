@@ -7,6 +7,19 @@
 
 .main{
     height: 100%;
+    scroll-behavior: smooth;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .banner-section{
@@ -103,9 +116,9 @@
     right: -300px;
     background-color: #ebeabe;
     width: 0;
-    height: 100%;
+    height: 100vh;
     transition: 1s;
-    padding: 150px 100px;
+    padding: 200px 100px;
     overflow-y: scroll;
     visibility: hidden;
 }
@@ -115,6 +128,12 @@
     flex-direction: column;
     list-style-type: none;
     padding: 0;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+#collapseMenu .navbar-list .nav-item{
+    opacity: .5;
 }
 
 .nav-item{
@@ -133,12 +152,13 @@
 }
 
 .nav-links:hover{
-    opacity: .4;
+    color: rgba(0, 0, 0, .4);
 }
 
 .login-section{
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 .login-link{
@@ -178,17 +198,18 @@
 #collapseMenu.show{
     right: 0;
     width: 50%;
-    transition: 1s;
+    transition: 3s;
+    z-index: 100;
     visibility: visible;
 }
 
 #collapseMenu.show .navbar-list {
     opacity: 1;
     transform: translateY(0);
-    margin-bottom: 150px;
 }
 
 #collapseMenu.show .nav-item {
+    transform: translateY(-100px);
     opacity: 1;
     transition: 2s;
 }
