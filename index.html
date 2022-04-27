@@ -9,16 +9,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main class="main">
+        <main class="main" id="mainSection">
             <!-- Banner-section -->
             <div class="banner-section">
                 <!-- Header-section -->
                 <header>
                     <nav class="navbar-section">
-                        <a href="index.html" class="navbar-title"><span class="navbar-title-line">Knox</span> Lane</a>
+                        <a href="index.html" class="navbar-title" id="navbarTitle"><span class="navbar-title-line" id="navbarLine">Knox</span> Lane</a>
                         <div class="navbar-contact-section">
                             <a href="javascript:void(0)" class="contact-us">Contact Us</a>
-                            <button id="hamburgerBtn" class="hamburger" title="hamburgerBtn" type="button"></button>
+                            <button id="hamburgerBtn" class="hamburger" title="hamburgerButton" type="button"></button>
                         </div>
                     </nav>
                     <div id="collapseMenu">
@@ -52,7 +52,7 @@
                 <!-- Hero-banner-section -->
                 <section class="hero-banner-section">
                     <div class="hero-banner">
-                        <h1 class="hero-banner-title">
+                        <h1 class="hero-banner-title" id="heroBannerTitle">
                             Growth-Oriented
                             <span>Partners</span>
                         </h1>
@@ -60,32 +60,30 @@
                 </section>
             </div>
             <!-- About-us-section -->
-            <div class="about-us-section">
-                <section class="about-us-section-info reveal">
+            <div class="about-us-section reveal">
+                <section class="about-us-section-info">
                     <h4 class="about-us-section-title">About</h4>
                     <p class="about-us-section-description">Knox Lane is an investment firm focused on partnering with growth-oriented businesses in the services and consumer sectors.</p>
                     <a href="javascript:void(0)" class="about-us-section-explore-more"><i class="bi bi-arrow-right"></i>LEARN MORE</a>
                     <span class="about-us-section-long-arrow"><i class="about-us-section-long-arrow-lines"></i></span>
                 </section>
-                <section class="about-us-section-members reveal">
+                <section class="about-us-section-members">
                     <h2 class="about-us-section-members-title">Our Journey So Far</h2>
                     <div class="about-us-section-members-section">
-                        <figure>
-                            <img src="images/about-section-member-img.jpg" alt="about-section-member-img" class="about-us-section-member-img">
-                        </figure>
+                        <img src="images/about-section-member-img.jpg" alt="about-section-member-img" class="about-us-section-member-img">
                         <div class="about-us-memebers-right-section">
                             <p class="about-us-section-members-description">We're motivated by a desire to connect and collaborate with those who share our values and are driven by a vision of the future in which good people seek out other good people, and achieve greatness together.</p>
                             <p class="about-us-section-members-sub-title">In the Numbers</p>
                             <ul class="about-us-section-members-unorder-list">
-                                <li>
+                                <li class="about-us-section-members-list-item">
                                     <div class="about-us-section-members-list"><span class="team-members"></span>+</div>
                                     <p class="about-us-section-members-list-description">Companies supported by team memebers over the last 20 years</p>
                                 </li>
-                                <li>
+                                <li class="about-us-section-members-list-item">
                                     <div class="about-us-section-members-list"><span class="diverse-team"></span>%</div>
                                     <p class="about-us-section-members-list-description">Diverse representation on the team</p>
                                 </li>
-                                <li>
+                                <li class="about-us-section-members-list-item">
                                     <div class="about-us-section-members-list">$<span>1</span> B</div>
                                     <p class="about-us-section-members-list-description">Of assets under management</p>
                                 </li>
@@ -96,7 +94,7 @@
             </div>
             <!-- Partners-section -->
             <div class="partners-section">
-                <section class="partners-section-info reveal">
+                <section class="partners-section-info">
                     <h4 class="partners-section-title">Partner Companies</h4>
                     <p class="partners-section-description">We measure success by points on the board-with our partner companies keeping score.</p>
                     <p class="partners-section-sub-title">SCROLL FOR MORE</p>

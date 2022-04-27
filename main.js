@@ -1,9 +1,17 @@
+let mainSection = document.getElementById("mainSection");
+let heroBannerTitle = document.getElementById("heroBannerTitle");
 let hamburgerBtn = document.getElementById("hamburgerBtn");
 let collapseMenu = document.getElementById("collapseMenu");
+let navbarTitle = document.getElementById("navbarTitle");
+let navbarLine = document.getElementById("navbarLine");
 
 hamburgerBtn.onclick = function(){
     hamburgerBtn.classList.toggle('cross');
     collapseMenu.classList.toggle('show');
+    heroBannerTitle.classList.toggle('blur-effect');
+    mainSection.classList.toggle('overflow-hidden');
+    navbarTitle.classList.toggle('nav-title');
+    navbarLine.classList.toggle('nav-title-line');
 }
 
 window.addEventListener('scroll', reveal);
